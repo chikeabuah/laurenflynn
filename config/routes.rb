@@ -1,4 +1,16 @@
 LaurenFlynn::Application.routes.draw do
+  get "static_pages/home"
+
+  get "static_pages/thread"
+
+  get "static_pages/ink"
+
+  get "static_pages/light"
+
+  get "static_pages/self"
+
+  get "static_pages/text"
+
   resources :users
 
   # The priority is based upon order of creation:
