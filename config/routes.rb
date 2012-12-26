@@ -1,4 +1,7 @@
 LaurenFlynn::Application.routes.draw do
+
+  root to: 'users#home'
+  
   get "static_pages/home"
 
   get "static_pages/thread"
