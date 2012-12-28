@@ -1,21 +1,50 @@
-/* header */
+@import "bootstrap";
+
+/* universal */
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  padding-top: 60px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+  h1 {
+      margin-bottom: 10px;
+  }
+}
+
+
+/* logo */
 
 #logo {
   float: left;
   margin-right: 10px;
-  font-size: 1.7em;
+  margin-bottom: 30px;
+  font-size: 1.5em;
   color: rgb(0,0,0);
-  text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 9px;
   font-weight: bold;
   line-height: 1;
+  font-family: Arial, sans-serif;
   text-decoration: none;
   &:hover {
     color: #fff;
     text-decoration: none;
   }
 }
+
 
 /* footer */
 
@@ -25,21 +54,12 @@ footer {
   border-top: 1px solid #eaeaea;
   color: #999;
   clear: both;
-  a {
-      color: #555;
-      &:hover {
-          color: #222;
-      }
   }
-  small {
-    float: left;
+
+//Overwrite original bootstrap to change navbar color.
+.navbar-inner {
+  background-color: #00B2EE; 
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
   }
-  ul {
-    float: right;
-    list-style: none;
-    li {
-      float: left;
-      margin-left: 10px;
-    }
-  }
-}

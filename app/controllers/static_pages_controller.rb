@@ -1,19 +1,37 @@
 class StaticPagesController < ApplicationController
-  def home
+
+  def light_exp
   end
 
-  def thread
+  def light_wall
   end
 
-  def ink
+  def carvings
   end
 
-  def light
+  def sisters
   end
 
-  def self
+  def lines
+  end
+
+  def figures
+  end
+
+  def newer
+  end
+
+  def new
   end
 
   def text
   end
+
+  def cv
+  end
+
+  def contact
+  end
+  
+
 end

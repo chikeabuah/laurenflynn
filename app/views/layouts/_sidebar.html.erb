@@ -1,0 +1,23 @@
+
+<div class="span2">
+    <ul id="sidenav" class="nav nav-pills nav-stacked">
+
+    <%= link_to "Lauren Flynn", root_path, id: "logo" %>
+    <br>
+      <h5> Works: </h5>
+      <li class="<%= 'active' if current_page?(light_exp_path) %>"> <%= link_to "Light Experiments", light_exp_path %></li>
+      <li class="<%= 'active' if current_page?(light_wall_path) %>"><%= link_to "Lights Traversing Walls", light_wall_path %></li>
+      <li class="<%= 'active' if current_page?(carvings_path) %>"><%= link_to "Carvings", carvings_path %></li>
+      <li class="<%= 'active' if current_page?(sisters_path) %>"><%= link_to "Sisters", sisters_path %></li>
+      <li class="<%= 'active' if current_page?(lines_path) %>"><%= link_to "Lines", lines_path %></li>
+      <li class="<%= 'active' if current_page?(figures_path) %>"><%= link_to "Figures", figures_path %></li>
+      <li class="<%= 'active' if current_page?(newer_path) %>"><%= link_to "Newer Embroideries", newer_path %></li>
+      <li class="<%= 'active' if current_page?(new_path) %>"><%= link_to "New Embroideries", new_path %></li>
+      <br>
+      <h5> Info: </h5>
+      <li class="<%= 'active' if current_page?(text_path) %>"><%= link_to "Text", text_path %></li>
+      <li class="<%= 'active' if current_page?(cv_path) %>"><%= link_to "CV", cv_path %></li>
+      <li class="<%= 'active' if current_page?(contact_path) %>"><%= link_to "Contact", contact_path %></li>
+
+    </ul>
+</div>

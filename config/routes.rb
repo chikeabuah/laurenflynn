@@ -1,18 +1,18 @@
 LaurenFlynn::Application.routes.draw do
 
   root to: 'users#home'
-  
-  get "static_pages/home"
 
-  get "static_pages/thread"
-
-  get "static_pages/ink"
-
-  get "static_pages/light"
-
-  get "static_pages/self"
-
-  get "static_pages/text"
+  match '/light_exp', to: 'static_pages#light_exp'
+  match '/light_wall', to: 'static_pages#light_wall'
+  match '/carvings', to: 'static_pages#carvings'
+  match '/sisters', to: 'static_pages#sisters'
+  match '/lines', to: 'static_pages#lines'
+  match '/figures', to: 'static_pages#figures'
+  match '/newer', to: 'static_pages#newer'
+  match '/new', to: 'static_pages#new'
+  match '/text', to: 'static_pages#text'
+  match '/cv', to: 'static_pages#cv'
+  match '/contact', to: 'static_pages#contact'
 
   resources :users
 
