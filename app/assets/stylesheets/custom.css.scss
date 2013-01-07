@@ -40,7 +40,7 @@ textarea {
   font-family: Arial, sans-serif;
   text-decoration: none;
   &:hover {
-    color: #fff;
+    color: #08c;
     text-decoration: none;
   }
 }
@@ -63,3 +63,9 @@ footer {
   background-repeat: no-repeat;
   filter: none;
   }
+
+
+.nav-pills > li > a {
+padding-top: 3px;
+padding-bottom: 3px;
+}
