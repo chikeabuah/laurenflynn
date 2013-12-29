@@ -2,17 +2,17 @@ LaurenFlynn::Application.routes.draw do
 
   root to: 'users#home'
 
-  match '/light_exp', to: 'static_pages#light_exp'
-  match '/light_wall', to: 'static_pages#light_wall'
-  match '/carvings', to: 'static_pages#carvings'
-  match '/sisters', to: 'static_pages#sisters'
-  match '/lines', to: 'static_pages#lines'
-  match '/figures', to: 'static_pages#figures'
-  match '/newer', to: 'static_pages#newer'
-  match '/new', to: 'static_pages#new'
-  match '/text', to: 'static_pages#text'
-  match '/cv', to: 'static_pages#cv'
-  match '/contact', to: 'static_pages#contact'
+  get '/light_exp', to: 'static_pages#light_exp'
+  get '/light_wall', to: 'static_pages#light_wall'
+  get '/carvings', to: 'static_pages#carvings'
+  get '/sisters', to: 'static_pages#sisters'
+  get '/lines', to: 'static_pages#lines'
+  get '/figures', to: 'static_pages#figures'
+  get '/newer', to: 'static_pages#newer'
+  get '/new', to: 'static_pages#new'
+  get '/text', to: 'static_pages#text'
+  get '/cv', to: 'static_pages#cv'
+  get '/contact', to: 'static_pages#contact'
 
   resources :users
 
@@ -20,11 +20,11 @@ LaurenFlynn::Application.routes.draw do
   # first created -> highest priority.
 
   # Sample of regular route:
-  #   match 'products/:id' => 'catalog#view'
+  #   get 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:
-  #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
+  #   get 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
@@ -71,6 +71,6 @@ LaurenFlynn::Application.routes.draw do
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
-  # match ':controller(/:action(/:id))(.:format)'
+  # get ':controller(/:action(/:id))(.:format)'
 end
 
