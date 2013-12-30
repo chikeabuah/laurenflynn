@@ -8,6 +8,11 @@ gem 'rails', '4.0.2'
 gem 'jquery-rails', '3.0.4'
 gem 'bootstrap-sass', '2.0.4'
 gem 'bcrypt-ruby', '3.0.1'
+gem 'protected_attributes'
+gem 'rails-observers'
+gem 'actionpack-page_caching'
+gem 'actionpack-action_caching'
+gem 'activerecord-deprecated_finders'
 
 group :development, :test do
   gem 'sqlite3', '1.3.8'
@@ -40,7 +45,7 @@ group :assets do
 end
 
 group :production do
-  gem 'pg', '0.12.2'
+  gem 'pg', '0.15.1'
 end
 
 # To use ActiveModel has_secure_password

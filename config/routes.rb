@@ -1,5 +1,7 @@
 LaurenFlynn::Application.routes.draw do
 
+  resources :users
+
   root to: 'users#home'
 
   get '/light_exp', to: 'static_pages#light_exp'
